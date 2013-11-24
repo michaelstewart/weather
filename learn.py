@@ -41,7 +41,7 @@ def main():
 	predictions['k'] = []
 	for i in xrange(15):
 		print i+1
-		temp = load('run_5_model_k_' + str(i), 'downloadedpickles')
+		temp = load('run_5_model_k_' + str(i), 'pickles')
 		models['k'].append(temp)
 		predictions['k'].append(temp.predict(testData))
 
