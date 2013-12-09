@@ -1,9 +1,0 @@
-Saved X_1000
-Vectorized
-Training on: s
-Training on: w
-Training on: k
-1
-      Iter       Train Loss   Remaining Time 
-         1           0.0073            5.03m
-         2           0.0052            4.53m
