@@ -9,39 +9,31 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import GradientBoostingRegressor
 from sklearn.linear_model import SGDRegressor
 from setup import *
-from scipy.sparse import csr_matrix
 
 MULTIPLIER = 5
-# BREAK_POINT = 389730	# Full train
-BREAK_POINT = 38973	# 64% Train
-TEST_ERROR = True
-TRAIN_ERROR = True
+# BREAK_POINT = 77946	# Full train
+BREAK_POINT = 38973	
+TEST_ERROR = False
+TRAIN_ERROR = False
 SAVE =  False
 RUN = True
 
-def main():
+def lame():
+	global trainData, testData
 
 	initData()
 
-	# dataList = simpleMultiply(get('tweet'), MULTIPLIER) + simpleMultiply(get('tweet_test'), MULTIPLIER)  # Full Train + Test
-	dataList = simpleMultiply(get('tweet')[:BREAK_POINT], MULTIPLIER) + simpleMultiply(get('tweet')[BREAK_POINT:], MULTIPLIER)  # Up to BP Train + From BP Test
-	X = vectorizeText(dataList, 100000)
+	dataList = list(get('tweet')) #+ list(get('tweet_test'))
+	X = vectorizeText(dataList, 30000)
 
-	# X = load('X_100000_first')
-	save(X, 'X_100000')
+	# X = load('Test_X_40000_short')
+	# save(X, 'X_k_all', 'pickles/ridge/1')
 	
 	print 'Vectorized'
 
-	sent = get('train_sent')	
-
-
-	print X.shape
-	print sent.shape
-
-
 	# Data
-	trainData = X[:BREAK_POINT*5]
-	testData = X[BREAK_POINT*5:]
+	trainData = X[:BREAK_POINT]
+	testData = X[BREAK_POINT:]
 
 	print trainData.shape
 	print testData.shape
@@ -51,42 +43,26 @@ def main():
 
 	# Sentiment 1-5
 	print('Sentiment')
-	sClasses = multiply(get('s_raw')[:BREAK_POINT], MULTIPLIER)
-	sentimentClf = trainLogReg(trainData, sClasses, penalty='l2', C=0.825)
-	# save(sentimentClf, 'model_s')
-	# sentimentClf = load('model_s')
-	predictions['s'] = sentimentClf.predict_proba(testData)[::5]
-	predictionsTrain['s'] = sentimentClf.predict_proba(trainData)[::5]
+	(predictions['s'], predictionsTrain['s']) = learnOverColumns('s', 5)
+	predictions['s'] = rowsToOne(predictions['s'])
+	predictionsTrain['s'] = rowsToOne(predictionsTrain['s'])
 
 	## When 1-4
 	print('When')
-	wClasses = multiply(get('w_raw')[:BREAK_POINT], MULTIPLIER)
-	whenClf = trainLogReg(trainData, wClasses, penalty='l2', C=0.7)
-	# save(whenClf, 'model_w')
-	# whenClf = load('model_w')
-	predictions['w'] = whenClf.predict_proba(testData)[::5]
-	predictionsTrain['w'] = whenClf.predict_proba(trainData)[::5]
-
+	(predictions['w'], predictionsTrain['w']) = learnOverColumns('w', 4)
+	predictions['w'] = rowsToOne(predictions['w'])
+	predictionsTrain['w'] = rowsToOne(predictionsTrain['w'])
+	
 	## Kind 1-15
 	print('Kind')
-	# Create class list
-	kClassList = []
-	for i in xrange(15):
-		kClassList.append(multiplySingle(get('k_raw')[:BREAK_POINT,i], MULTIPLIER))
+	(predictions['k'], predictionsTrain['k']) = learnOverColumns('k', 15)
+	predictions['k'] = containMatrix(predictions['k'])
+	predictionsTrain['k'] = containMatrix(predictionsTrain['k'])
 
-	kindClfs = []
-	predictions['k'] = []
-	predictionsTrain['k'] = []
-	for i in xrange(15):
-		kindClfs.append(trainLogReg(trainData, kClassList[i], penalty='l1', C=1))
-		# save(kindClfs[i], 'model_k_%d' % i)
-		# kindClfs.append(load('model_k_%d' % i))
-		predictions['k'].append(kindClfs[i].predict_proba(testData)[::5,1])
-		predictionsTrain['k'].append(kindClfs[i].predict_proba(trainData)[::5,1])
-
-
-	predictions['k'] = np.array(predictions['k']).T
 	combinedPredictions = np.concatenate((predictions['s'], predictions['w'], predictions['k']), axis=1)
+
+	if RUN == True:
+		return combinedPredictions
 
 
 	if SAVE:
@@ -114,7 +90,6 @@ def main():
 			k=get('k_raw')[:BREAK_POINT]
 		)
 
-		predictionsTrain['k'] = np.array(predictionsTrain['k']).T			
 		combinedPredictions = np.concatenate((predictionsTrain['s'], predictionsTrain['w'], predictionsTrain['k']), axis=1)
 
 		labels = np.concatenate((trainLabels['s'], trainLabels['w'], trainLabels['k']), axis=1)
@@ -125,6 +100,27 @@ def main():
 		print('K: Train Error', trainError(predictionsTrain['k'], trainLabels['k']))
 		print('All: Train Error', trainError(combinedPredictions, labels))
 
+def learnOverColumns(t, cols):
+	# Create class list
+	classList = []
+	for i in xrange(cols):
+		classList.append(get('%s_raw' % t)[:BREAK_POINT,i])
+
+	clfs = []
+	predictions = []
+	predictionsTrain = []
+	for i in xrange(cols):
+		print 'Starting %d...' % i
+		clfs.append(trainRidgeRegressor(trainData, classList[i]))
+		# save(clfs[i], 'all_%s_%d' % (t,i), 'pickles/ridge/1')
+		predictions.append(clfs[i].predict(testData))
+		predictionsTrain.append(clfs[i].predict(trainData))
+
+	return (np.array(predictions).T, np.array(predictionsTrain).T)
+
+def run():
+	RUN = True
+	return lame()
 
 if __name__ == '__main__':
-	main()
+	lame()

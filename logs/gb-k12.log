@@ -1,0 +1,146 @@
+2013-11-30 09:06:56,713:INFO:STDOUT:Start
+2013-11-30 09:06:57,023:INFO:STDOUT:(389730, 493)
+2013-11-30 09:06:57,023:INFO:STDOUT:Vectorized
+2013-11-30 09:06:59,642:INFO:STDOUT:Densified
+2013-11-30 09:07:00,173:INFO:STDOUT:========================================
+2013-11-30 09:07:00,173:INFO:STDOUT:Training: GradientBoostingClassifier
+2013-11-30 09:07:00,588:ERROR:STDERR:Traceback (most recent call last):
+2013-11-30 09:07:00,589:ERROR:STDERR:  File "gb.py", line 120, in <module>
+2013-11-30 09:07:00,606:ERROR:STDERR:main()
+2013-11-30 09:07:00,607:ERROR:STDERR:  File "gb.py", line 77, in main
+2013-11-30 09:07:00,607:ERROR:STDERR:clf = trainGB(trainData, classes, n_estimators=300)
+2013-11-30 09:07:00,607:ERROR:STDERR:  File "/home/ubuntu/Dropbox/weather/setup.py", line 34, in trainGB
+2013-11-30 09:07:00,626:ERROR:STDERR:clf.fit(X, y)
+2013-11-30 09:07:00,627:ERROR:STDERR:  File "/usr/local/lib/python2.7/dist-packages/sklearn/ensemble/gradient_boosting.py", line 890, in fit
+2013-11-30 09:07:00,651:ERROR:STDERR:return super(GradientBoostingClassifier, self).fit(X, y)
+2013-11-30 09:07:00,651:ERROR:STDERR:  File "/usr/local/lib/python2.7/dist-packages/sklearn/ensemble/gradient_boosting.py", line 554, in fit
+2013-11-30 09:07:00,651:ERROR:STDERR:check_ccontiguous=True)
+2013-11-30 09:07:00,651:ERROR:STDERR:  File "/usr/local/lib/python2.7/dist-packages/sklearn/utils/validation.py", line 230, in check_arrays
+2013-11-30 09:07:00,661:ERROR:STDERR:array = np.ascontiguousarray(array, dtype=dtype)
+2013-11-30 09:07:00,662:ERROR:STDERR:  File "/usr/lib/python2.7/dist-packages/numpy/core/numeric.py", line 323, in ascontiguousarray
+2013-11-30 09:07:00,678:ERROR:STDERR:return array(a, dtype, copy=False, order='C', ndmin=1)
+2013-11-30 09:07:00,678:ERROR:STDERR:MemoryError
+2013-11-30 09:07:51,794:INFO:STDOUT:Start
+2013-11-30 09:07:52,088:INFO:STDOUT:(389730, 493)
+2013-11-30 09:07:52,088:INFO:STDOUT:Vectorized
+2013-11-30 09:07:54,687:INFO:STDOUT:Densified
+2013-11-30 09:07:55,247:INFO:STDOUT:========================================
+2013-11-30 09:07:55,247:INFO:STDOUT:Training: GradientBoostingClassifier
+2013-11-30 09:07:55,309:ERROR:STDERR:Traceback (most recent call last):
+2013-11-30 09:07:55,309:ERROR:STDERR:  File "gb.py", line 120, in <module>
+2013-11-30 09:07:55,309:ERROR:STDERR:main()
+2013-11-30 09:07:55,309:ERROR:STDERR:  File "gb.py", line 77, in main
+2013-11-30 09:07:55,309:ERROR:STDERR:clf = trainGB(trainData, classes, n_estimators=300)
+2013-11-30 09:07:55,310:ERROR:STDERR:  File "/home/ubuntu/Dropbox/weather/setup.py", line 34, in trainGB
+2013-11-30 09:07:55,310:ERROR:STDERR:clf.fit(X, y)
+2013-11-30 09:07:55,310:ERROR:STDERR:  File "/usr/local/lib/python2.7/dist-packages/sklearn/ensemble/gradient_boosting.py", line 890, in fit
+2013-11-30 09:07:55,310:ERROR:STDERR:return super(GradientBoostingClassifier, self).fit(X, y)
+2013-11-30 09:07:55,310:ERROR:STDERR:  File "/usr/local/lib/python2.7/dist-packages/sklearn/ensemble/gradient_boosting.py", line 554, in fit
+2013-11-30 09:07:55,310:ERROR:STDERR:check_ccontiguous=True)
+2013-11-30 09:07:55,311:ERROR:STDERR:  File "/usr/local/lib/python2.7/dist-packages/sklearn/utils/validation.py", line 230, in check_arrays
+2013-11-30 09:07:55,311:ERROR:STDERR:array = np.ascontiguousarray(array, dtype=dtype)
+2013-11-30 09:07:55,311:ERROR:STDERR:  File "/usr/lib/python2.7/dist-packages/numpy/core/numeric.py", line 323, in ascontiguousarray
+2013-11-30 09:07:55,311:ERROR:STDERR:return array(a, dtype, copy=False, order='C', ndmin=1)
+2013-11-30 09:07:55,311:ERROR:STDERR:MemoryError
+2013-11-30 09:09:19,593:INFO:STDOUT:Start
+2013-11-30 09:09:19,899:INFO:STDOUT:(389730, 493)
+2013-11-30 09:09:19,899:INFO:STDOUT:Vectorized
+2013-11-30 09:09:22,589:INFO:STDOUT:Densified
+2013-11-30 09:09:23,136:INFO:STDOUT:========================================
+2013-11-30 09:09:23,137:INFO:STDOUT:Training: GradientBoostingClassifier
+2013-11-30 09:09:23,201:ERROR:STDERR:Traceback (most recent call last):
+2013-11-30 09:09:23,201:ERROR:STDERR:  File "gb.py", line 120, in <module>
+2013-11-30 09:09:23,201:ERROR:STDERR:main()
+2013-11-30 09:09:23,202:ERROR:STDERR:  File "gb.py", line 77, in main
+2013-11-30 09:09:23,202:ERROR:STDERR:clf = trainGB(trainData, classes, n_estimators=300)
+2013-11-30 09:09:23,202:ERROR:STDERR:  File "/home/ubuntu/Dropbox/weather/setup.py", line 34, in trainGB
+2013-11-30 09:09:23,202:ERROR:STDERR:clf.fit(X, y)
+2013-11-30 09:09:23,202:ERROR:STDERR:  File "/usr/local/lib/python2.7/dist-packages/sklearn/ensemble/gradient_boosting.py", line 890, in fit
+2013-11-30 09:09:23,202:ERROR:STDERR:return super(GradientBoostingClassifier, self).fit(X, y)
+2013-11-30 09:09:23,202:ERROR:STDERR:  File "/usr/local/lib/python2.7/dist-packages/sklearn/ensemble/gradient_boosting.py", line 554, in fit
+2013-11-30 09:09:23,203:ERROR:STDERR:check_ccontiguous=True)
+2013-11-30 09:09:23,203:ERROR:STDERR:  File "/usr/local/lib/python2.7/dist-packages/sklearn/utils/validation.py", line 230, in check_arrays
+2013-11-30 09:09:23,203:ERROR:STDERR:array = np.ascontiguousarray(array, dtype=dtype)
+2013-11-30 09:09:23,203:ERROR:STDERR:  File "/usr/lib/python2.7/dist-packages/numpy/core/numeric.py", line 323, in ascontiguousarray
+2013-11-30 09:09:23,203:ERROR:STDERR:return array(a, dtype, copy=False, order='C', ndmin=1)
+2013-11-30 09:09:23,203:ERROR:STDERR:MemoryError
+2013-11-30 09:16:04,078:INFO:STDOUT:Start
+2013-11-30 09:16:04,382:INFO:STDOUT:(389730, 493)
+2013-11-30 09:16:04,382:INFO:STDOUT:Vectorized
+2013-11-30 09:16:07,011:INFO:STDOUT:Densified
+2013-11-30 09:16:07,569:INFO:STDOUT:========================================
+2013-11-30 09:16:07,569:INFO:STDOUT:Training: GradientBoostingClassifier
+2013-11-30 09:16:07,633:ERROR:STDERR:Traceback (most recent call last):
+2013-11-30 09:16:07,633:ERROR:STDERR:  File "gb.py", line 120, in <module>
+2013-11-30 09:16:07,633:ERROR:STDERR:main()
+2013-11-30 09:16:07,634:ERROR:STDERR:  File "gb.py", line 77, in main
+2013-11-30 09:16:07,634:ERROR:STDERR:clf = trainGB(trainData, classes, n_estimators=300)
+2013-11-30 09:16:07,634:ERROR:STDERR:  File "/home/ubuntu/Dropbox/weather/setup.py", line 34, in trainGB
+2013-11-30 09:16:07,634:ERROR:STDERR:clf.fit(X, y)
+2013-11-30 09:16:07,634:ERROR:STDERR:  File "/usr/local/lib/python2.7/dist-packages/sklearn/ensemble/gradient_boosting.py", line 890, in fit
+2013-11-30 09:16:07,634:ERROR:STDERR:return super(GradientBoostingClassifier, self).fit(X, y)
+2013-11-30 09:16:07,634:ERROR:STDERR:  File "/usr/local/lib/python2.7/dist-packages/sklearn/ensemble/gradient_boosting.py", line 554, in fit
+2013-11-30 09:16:07,635:ERROR:STDERR:check_ccontiguous=True)
+2013-11-30 09:16:07,635:ERROR:STDERR:  File "/usr/local/lib/python2.7/dist-packages/sklearn/utils/validation.py", line 230, in check_arrays
+2013-11-30 09:16:07,635:ERROR:STDERR:array = np.ascontiguousarray(array, dtype=dtype)
+2013-11-30 09:16:07,635:ERROR:STDERR:  File "/usr/lib/python2.7/dist-packages/numpy/core/numeric.py", line 323, in ascontiguousarray
+2013-11-30 09:16:07,635:ERROR:STDERR:return array(a, dtype, copy=False, order='C', ndmin=1)
+2013-11-30 09:16:07,635:ERROR:STDERR:MemoryError
+2013-11-30 22:56:51,594:INFO:STDOUT:Start
+2013-11-30 22:56:51,859:INFO:STDOUT:(389730, 493)
+2013-11-30 22:56:51,859:INFO:STDOUT:Vectorized
+2013-11-30 22:56:54,115:INFO:STDOUT:Densified
+2013-11-30 22:56:54,433:INFO:STDOUT:========================================
+2013-11-30 22:56:54,433:INFO:STDOUT:Training: GradientBoostingClassifier
+2013-11-30 22:56:55,478:INFO:STDOUT:      Iter       Train Loss      OOB Improve   Remaining Time
+2013-11-30 22:57:32,859:INFO:STDOUT:         1           0.7339           0.1299           61.68m
+2013-11-30 22:58:11,666:INFO:STDOUT:         2           0.6551           0.0797           62.22m
+2013-11-30 22:58:37,858:INFO:STDOUT:         3           0.5920           0.0578           55.17m
+2013-11-30 22:58:57,641:INFO:STDOUT:         4           0.5495           0.0445           48.87m
+2013-11-30 22:59:17,808:INFO:STDOUT:         5           0.5118           0.0357           45.07m
+2013-11-30 22:59:37,739:INFO:STDOUT:         6           0.4814           0.0293           42.37m
+2013-11-30 22:59:57,713:INFO:STDOUT:         7           0.4605           0.0243           40.35m
+2013-11-30 23:00:17,797:INFO:STDOUT:         8           0.4435           0.0202           38.78m
+2013-11-30 23:00:37,828:INFO:STDOUT:         9           0.4228           0.0171           37.47m
+2013-11-30 23:00:57,674:INFO:STDOUT:        10           0.4111           0.0143           36.33m
+2013-11-30 23:04:04,549:INFO:STDOUT:        20           0.3439           0.0028           28.60m
+2013-11-30 23:07:11,351:INFO:STDOUT:        30           0.3345           0.0010           23.95m
+2013-11-30 23:10:23,178:INFO:STDOUT:        40           0.3169           0.0002           20.19m
+2013-11-30 23:13:47,558:INFO:STDOUT:        50           0.3185           0.0000           16.87m
+2013-11-30 23:17:14,130:INFO:STDOUT:        60           0.3160           0.0001           13.54m
+2013-11-30 23:20:41,510:INFO:STDOUT:        70           0.3143           0.0000           10.19m
+2013-11-30 23:24:08,724:INFO:STDOUT:        80           0.3115           0.0000            6.81m
+2013-11-30 23:27:36,145:INFO:STDOUT:        90           0.3094          -0.0000            3.41m
+2013-11-30 23:31:03,951:INFO:STDOUT:       100           0.3090           0.0001            0.00s
+2013-11-30 23:31:03,951:INFO:STDOUT:train time: 2049.518s
+2013-11-30 23:31:04,016:INFO:STDOUT:Saved k12
+2013-12-01 07:31:02,107:INFO:STDOUT:Start
+2013-12-01 07:31:02,316:INFO:STDOUT:(389730, 493)
+2013-12-01 07:31:02,316:INFO:STDOUT:Vectorized
+2013-12-01 07:31:04,013:INFO:STDOUT:Densified
+2013-12-01 07:31:04,155:INFO:STDOUT:========================================
+2013-12-01 07:31:04,155:INFO:STDOUT:Training: GradientBoostingClassifier
+2013-12-01 07:31:04,879:INFO:STDOUT:      Iter       Train Loss      OOB Improve   Remaining Time
+2013-12-01 07:31:23,325:INFO:STDOUT:         1           0.7329           0.1305           91.92m
+2013-12-01 07:31:42,130:INFO:STDOUT:         2           0.6525           0.0795           92.51m
+2013-12-01 07:32:01,147:INFO:STDOUT:         3           0.5955           0.0575           92.84m
+2013-12-01 07:32:19,991:INFO:STDOUT:         4           0.5462           0.0449           92.64m
+2013-12-01 07:32:38,797:INFO:STDOUT:         5           0.5145           0.0357           92.35m
+2013-12-01 07:32:57,383:INFO:STDOUT:         6           0.4869           0.0292           91.88m
+2013-12-01 07:33:16,220:INFO:STDOUT:         7           0.4593           0.0243           91.63m
+2013-12-01 07:33:34,747:INFO:STDOUT:         8           0.4385           0.0203           91.17m
+2013-12-01 07:33:53,372:INFO:STDOUT:         9           0.4229           0.0171           90.80m
+2013-12-01 07:34:12,134:INFO:STDOUT:        10           0.4048           0.0145           90.51m
+2013-12-01 07:37:26,422:INFO:STDOUT:        20           0.3432           0.0030           89.03m
+2013-12-01 07:40:48,238:INFO:STDOUT:        30           0.3262           0.0010           87.50m
+2013-12-01 07:44:12,777:INFO:STDOUT:        40           0.3224           0.0002           85.36m
+2013-12-01 07:47:39,023:INFO:STDOUT:        50           0.3164           0.0001           82.85m
+2013-12-01 07:51:05,696:INFO:STDOUT:        60           0.3149           0.0001           80.05m
+2013-12-01 07:54:35,298:INFO:STDOUT:        70           0.3141           0.0001           77.24m
+2013-12-01 07:58:12,852:INFO:STDOUT:        80           0.3116           0.0000           74.62m
+2013-12-01 08:01:45,107:INFO:STDOUT:        90           0.3134           0.0000           71.56m
+2013-12-01 08:05:13,474:INFO:STDOUT:       100           0.3056           0.0000           68.29m
+2013-12-01 08:39:51,541:INFO:STDOUT:       200           0.3042          -0.0000           34.39m
+2013-12-01 09:14:52,164:INFO:STDOUT:       300           0.2995          -0.0000            0.00s
+2013-12-01 09:14:52,164:INFO:STDOUT:train time: 6228.009s
+2013-12-01 09:14:52,403:INFO:STDOUT:Saved k12

@@ -1,0 +1,161 @@
+2013-12-01 15:12:41,483:INFO:STDOUT:Start
+2013-12-01 15:12:41,772:INFO:STDOUT:(389730, 474)
+2013-12-01 15:12:41,773:INFO:STDOUT:Vectorized
+2013-12-01 15:12:44,276:INFO:STDOUT:Densified
+2013-12-01 15:12:44,478:INFO:STDOUT:========================================
+2013-12-01 15:12:44,479:INFO:STDOUT:Training: GradientBoostingClassifier
+2013-12-01 15:12:45,203:INFO:STDOUT:      Iter       Train Loss      OOB Improve   Remaining Time
+2013-12-01 15:13:23,206:INFO:STDOUT:         1           0.1810           0.1360          379.39m
+2013-12-01 15:14:03,811:INFO:STDOUT:         2           0.1621           0.0202          391.73m
+2013-12-01 15:14:37,807:INFO:STDOUT:Start
+2013-12-01 15:14:38,119:INFO:STDOUT:(389730, 460)
+2013-12-01 15:14:38,119:INFO:STDOUT:Vectorized
+2013-12-01 15:14:40,180:INFO:STDOUT:Densified
+2013-12-01 15:14:40,282:INFO:STDOUT:========================================
+2013-12-01 15:14:40,282:INFO:STDOUT:Training: GradientBoostingClassifier
+2013-12-01 15:14:40,887:INFO:STDOUT:      Iter       Train Loss      OOB Improve   Remaining Time
+2013-12-01 15:14:47,007:INFO:STDOUT:         3           0.1453           0.0158          403.98m
+2013-12-01 15:15:27,379:INFO:STDOUT:         1           0.1828           0.1325          464.15m
+2013-12-01 15:15:34,124:INFO:STDOUT:         4           0.1331           0.0119          419.49m
+2013-12-01 15:16:14,622:INFO:STDOUT:         2           0.1623           0.0192          467.12m
+2013-12-01 15:16:21,119:INFO:STDOUT:         5           0.1251           0.0097          428.23m
+2013-12-01 15:16:55,323:INFO:STDOUT:         3           0.1439           0.0155          445.88m
+2013-12-01 15:17:06,919:INFO:STDOUT:         6           0.1179           0.0078          431.83m
+2013-12-01 15:17:40,687:INFO:STDOUT:         4           0.1315           0.0119          446.50m
+2013-12-01 15:17:48,146:INFO:STDOUT:         7           0.1083           0.0066          427.73m
+2013-12-01 15:18:26,025:INFO:STDOUT:         5           0.1239           0.0095          446.52m
+2013-12-01 15:18:36,112:INFO:STDOUT:         8           0.1040           0.0058          432.79m
+2013-12-01 15:19:11,572:INFO:STDOUT:         6           0.1156           0.0079          446.63m
+2013-12-01 15:19:23,791:INFO:STDOUT:         9           0.0975           0.0048          436.23m
+2013-12-01 15:19:57,619:INFO:STDOUT:         7           0.1075           0.0069          447.20m
+2013-12-01 15:20:11,429:INFO:STDOUT:        10           0.0943           0.0042          438.79m
+2013-12-01 15:20:44,165:INFO:STDOUT:         8           0.1031           0.0054          448.04m
+2013-12-01 15:21:13,892:INFO:STDOUT:         9           0.0994           0.0051          430.12m
+2013-12-01 15:21:57,661:INFO:STDOUT:        10           0.0942           0.0043          429.49m
+2013-12-01 15:28:01,144:INFO:STDOUT:        20           0.0719           0.0012          442.70m
+2013-12-01 15:28:56,774:INFO:STDOUT:        20           0.0711           0.0010          413.68m
+2013-12-01 15:35:33,103:INFO:STDOUT:        30           0.0655           0.0004          396.54m
+2013-12-01 15:35:34,272:INFO:STDOUT:        30           0.0655           0.0003          433.54m
+2013-12-01 17:37:48,683:INFO:STDOUT:Start
+2013-12-01 17:37:49,075:INFO:STDOUT:(389730, 474)
+2013-12-01 17:37:49,080:INFO:STDOUT:Vectorized
+2013-12-01 17:37:51,127:INFO:STDOUT:Densified
+2013-12-01 17:37:51,234:INFO:STDOUT:========================================
+2013-12-01 17:37:51,234:INFO:STDOUT:Training: GradientBoostingClassifier
+2013-12-01 17:37:51,883:INFO:STDOUT:      Iter       Train Loss      OOB Improve   Remaining Time
+2013-12-01 17:38:12,143:INFO:STDOUT:         1           0.1785           0.1364          202.26m
+2013-12-01 17:38:32,508:INFO:STDOUT:         2           0.1596           0.0209          202.45m
+2013-12-01 17:38:52,604:INFO:STDOUT:         3           0.1444           0.0159          201.39m
+2013-12-01 17:39:12,769:INFO:STDOUT:         4           0.1341           0.0119          200.87m
+2013-12-01 17:39:32,950:INFO:STDOUT:         5           0.1230           0.0098          200.45m
+2013-12-01 17:40:00,080:INFO:STDOUT:         6           0.1160           0.0080          211.52m
+2013-12-01 17:40:38,553:INFO:STDOUT:         7           0.1075           0.0066          235.32m
+2013-12-01 17:41:04,537:INFO:STDOUT:         8           0.1041           0.0058          237.61m
+2013-12-01 17:45:42,527:INFO:STDOUT:Start
+2013-12-01 17:45:42,839:INFO:STDOUT:(389730, 474)
+2013-12-01 17:45:42,839:INFO:STDOUT:Vectorized
+2013-12-01 17:45:45,330:INFO:STDOUT:Densified
+2013-12-01 17:45:45,558:INFO:STDOUT:========================================
+2013-12-01 17:45:45,558:INFO:STDOUT:Training: GradientBoostingClassifier
+2013-12-01 17:45:46,292:INFO:STDOUT:      Iter       Train Loss      OOB Improve   Remaining Time
+2013-12-01 17:46:26,088:INFO:STDOUT:         1           0.1814           0.1335          131.99m
+2013-12-01 17:47:07,906:INFO:STDOUT:         2           0.1609           0.0193          134.66m
+2013-12-01 17:47:19,345:INFO:STDOUT:Start
+2013-12-01 17:47:19,688:INFO:STDOUT:(389730, 460)
+2013-12-01 17:47:19,688:INFO:STDOUT:Vectorized
+2013-12-01 17:47:22,361:INFO:STDOUT:Densified
+2013-12-01 17:47:22,566:INFO:STDOUT:========================================
+2013-12-01 17:47:22,566:INFO:STDOUT:Training: GradientBoostingClassifier
+2013-12-01 17:47:23,405:INFO:STDOUT:      Iter       Train Loss      OOB Improve   Remaining Time
+2013-12-01 17:47:53,564:INFO:STDOUT:         3           0.1459           0.0144          139.29m
+2013-12-01 17:48:09,369:INFO:STDOUT:         1           0.1819           0.1339          152.45m
+2013-12-01 17:48:41,218:INFO:STDOUT:         4           0.1332           0.0129          142.86m
+2013-12-01 17:48:54,584:INFO:STDOUT:         2           0.1597           0.0196          150.45m
+2013-12-01 17:49:28,394:INFO:STDOUT:         5           0.1237           0.0096          144.37m
+2013-12-01 17:49:40,214:INFO:STDOUT:         3           0.1459           0.0145          149.73m
+2013-12-01 17:50:15,437:INFO:STDOUT:         6           0.1167           0.0079          145.04m
+2013-12-01 17:50:26,156:INFO:STDOUT:         4           0.1320           0.0128          149.25m
+2013-12-01 17:50:47,799:INFO:STDOUT:         7           0.1091           0.0067          138.55m
+2013-12-01 17:51:11,786:INFO:STDOUT:         5           0.1236           0.0091          148.45m
+2013-12-01 17:51:34,591:INFO:STDOUT:         8           0.1042           0.0058          139.32m
+2013-12-01 17:51:41,428:INFO:STDOUT:         6           0.1159           0.0080          139.05m
+2013-12-01 17:52:14,305:INFO:STDOUT:         7           0.1108           0.0067          133.68m
+2013-12-01 17:52:23,052:INFO:STDOUT:         9           0.0987           0.0049          140.34m
+2013-12-01 17:52:59,007:INFO:STDOUT:         8           0.1045           0.0055          134.24m
+2013-12-01 17:53:11,015:INFO:STDOUT:        10           0.0940           0.0042          140.83m
+2013-12-01 17:53:43,826:INFO:STDOUT:         9           0.0986           0.0051          134.56m
+2013-12-01 17:54:20,522:INFO:STDOUT:        10           0.0939           0.0042          132.09m
+2013-12-01 18:00:44,903:INFO:STDOUT:        20           0.0703           0.0012          134.79m
+2013-12-01 18:01:27,326:INFO:STDOUT:        20           0.0708           0.0011          126.59m
+2013-12-01 18:06:38,916:INFO:STDOUT:        30           0.0663           0.0003          118.30m
+2013-12-01 18:08:55,596:INFO:STDOUT:        30           0.0638           0.0002          122.04m
+2013-12-01 18:14:37,859:INFO:STDOUT:        40           0.0644           0.0001          115.44m
+2013-12-01 18:16:24,481:INFO:STDOUT:        40           0.0631           0.0000          116.07m
+2013-12-01 18:22:38,324:INFO:STDOUT:        50           0.0600           0.0001          110.60m
+2013-12-01 18:23:48,948:INFO:STDOUT:        50           0.0620           0.0000          109.28m
+2013-12-01 18:53:28,098:INFO:STDOUT:Start
+2013-12-01 18:53:28,371:INFO:STDOUT:(389730, 547)
+2013-12-01 18:53:28,371:INFO:STDOUT:Vectorized
+2013-12-01 18:53:30,565:INFO:STDOUT:Densified
+2013-12-01 18:53:30,667:INFO:STDOUT:========================================
+2013-12-01 18:53:30,667:INFO:STDOUT:Training: GradientBoostingClassifier
+2013-12-01 18:53:31,361:INFO:STDOUT:      Iter       Train Loss      OOB Improve   Remaining Time
+2013-12-01 18:53:57,305:INFO:STDOUT:         1           0.1796           0.1357          107.67m
+2013-12-01 18:54:01,350:INFO:STDOUT:Start
+2013-12-01 18:54:01,714:INFO:STDOUT:(389730, 524)
+2013-12-01 18:54:01,714:INFO:STDOUT:Vectorized
+2013-12-01 18:54:04,502:INFO:STDOUT:Densified
+2013-12-01 18:54:04,709:INFO:STDOUT:========================================
+2013-12-01 18:54:04,709:INFO:STDOUT:Training: GradientBoostingClassifier
+2013-12-01 18:54:07,291:INFO:STDOUT:      Iter       Train Loss      OOB Improve   Remaining Time
+2013-12-01 18:55:32,669:INFO:STDOUT:Start
+2013-12-01 18:55:33,243:INFO:STDOUT:(389730, 547)
+2013-12-01 18:55:33,243:INFO:STDOUT:Vectorized
+2013-12-01 18:55:35,410:INFO:STDOUT:Densified
+2013-12-01 18:55:35,507:INFO:STDOUT:========================================
+2013-12-01 18:55:35,507:INFO:STDOUT:Training: GradientBoostingClassifier
+2013-12-01 18:55:36,187:INFO:STDOUT:      Iter       Train Loss      OOB Improve   Remaining Time
+2013-12-01 18:55:46,041:INFO:STDOUT:Start
+2013-12-01 18:55:46,433:INFO:STDOUT:(389730, 524)
+2013-12-01 18:55:46,433:INFO:STDOUT:Vectorized
+2013-12-01 18:55:53,921:INFO:STDOUT:Densified
+2013-12-01 18:55:54,077:INFO:STDOUT:========================================
+2013-12-01 18:55:54,081:INFO:STDOUT:Training: GradientBoostingClassifier
+2013-12-01 18:55:56,340:INFO:STDOUT:      Iter       Train Loss      OOB Improve   Remaining Time
+2013-12-01 18:56:59,689:INFO:STDOUT:Start
+2013-12-01 18:57:00,050:INFO:STDOUT:(389730, 547)
+2013-12-01 18:57:00,050:INFO:STDOUT:Vectorized
+2013-12-01 18:57:02,963:INFO:STDOUT:Densified
+2013-12-01 18:57:03,186:INFO:STDOUT:========================================
+2013-12-01 18:57:03,186:INFO:STDOUT:Training: GradientBoostingClassifier
+2013-12-01 18:57:04,032:INFO:STDOUT:      Iter       Train Loss      OOB Improve   Remaining Time
+2013-12-01 18:57:45,280:INFO:STDOUT:         1           0.1832           0.1331          136.81m
+2013-12-01 18:58:09,901:INFO:STDOUT:         2           0.1615           0.0195          108.68m
+2013-12-01 18:58:49,245:INFO:STDOUT:         3           0.1441           0.0154          115.15m
+2013-12-01 18:59:45,053:INFO:STDOUT:         4           0.1324           0.0119          131.50m
+2013-12-01 19:00:44,238:INFO:STDOUT:         5           0.1244           0.0095          143.13m
+2013-12-01 19:01:11,691:INFO:STDOUT:         6           0.1166           0.0077          133.46m
+2013-12-01 19:01:38,258:INFO:STDOUT:         7           0.1095           0.0067          126.01m
+2013-12-01 19:02:05,028:INFO:STDOUT:         8           0.1034           0.0058          120.40m
+2013-12-01 19:02:31,265:INFO:STDOUT:         9           0.0987           0.0049          115.74m
+2013-12-01 19:02:57,645:INFO:STDOUT:        10           0.0931           0.0042          111.98m
+2013-12-01 19:10:23,859:INFO:STDOUT:        20           0.0705           0.0012          119.97m
+2013-12-01 19:18:30,362:INFO:STDOUT:        30           0.0657           0.0002          121.49m
+2013-12-01 19:23:47,030:INFO:STDOUT:        40           0.0612           0.0001          106.87m
+2013-12-01 19:28:59,207:INFO:STDOUT:        50           0.0633           0.0000           95.76m
+2013-12-01 19:36:38,345:INFO:STDOUT:        60           0.0645           0.0000           92.33m
+2013-12-01 19:46:47,321:INFO:STDOUT:        70    27310489.2708           0.0000           92.34m
+2013-12-01 19:55:01,348:INFO:STDOUT:        80  1568077255.6158           0.0000           86.93m
+2013-12-01 20:03:44,572:INFO:STDOUT:        90   770383383.2302          -0.0001           81.49m
+2013-12-01 20:08:38,415:INFO:STDOUT:       100  1568077255.6120           0.0000           71.57m
+2013-12-01 21:23:06,098:INFO:STDOUT:       200  1554422011.0099           0.0000            0.00s
+2013-12-01 21:23:06,117:INFO:STDOUT:train time: 8762.931s
+2013-12-01 21:23:06,316:INFO:STDOUT:Saved k10
+2013-12-01 21:23:06,333:ERROR:STDERR:Traceback (most recent call last):
+2013-12-01 21:23:06,334:ERROR:STDERR:  File "gb.py", line 120, in <module>
+2013-12-01 21:23:06,334:ERROR:STDERR:main()
+2013-12-01 21:23:06,334:ERROR:STDERR:  File "gb.py", line 83, in main
+2013-12-01 21:23:06,334:ERROR:STDERR:writePredictions(combinedPredictions)
+2013-12-01 21:23:06,334:ERROR:STDERR:NameError
+2013-12-01 21:23:06,334:ERROR:STDERR::
+2013-12-01 21:23:06,334:ERROR:STDERR:global name 'combinedPredictions' is not defined

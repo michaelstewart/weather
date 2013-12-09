@@ -11,91 +11,112 @@ from sklearn.linear_model import SGDRegressor
 from setup import *
 
 MULTIPLIER = 5
-BREAK_POINT = 389730
+# BREAK_POINT = 389730	# Full train
+BREAK_POINT = 50000	# 64% Train
+TEST_ERROR = True
+TRAIN_ERROR = True
+SAVE =  False
 
 def main():
 
 	initData()
 
-	# X = vectorizeText(get('tweet')[BREAK_POINT:], 10000)
-	dataList = simpleMultiply(get('tweet'), MULTIPLIER) + list(get('tweet_test'))
-	X_long = vectorizeText(dataList, 10000)
+	# dataList = simpleMultiply(get('tweet'), MULTIPLIER) + simpleMultiply(get('tweet_test'), MULTIPLIER)  # Full Train + Test
+	dataList = simpleMultiply(get('tweet')[:BREAK_POINT], MULTIPLIER) + simpleMultiply(get('tweet')[BREAK_POINT:], MULTIPLIER)  # Up to BP Train + From BP Test
+	X = vectorizeText(dataList, 40000)
 
-	# X = load('X_10000')
-	# X_long = load('X_10000_long_t1')
-	# save(X, 'X_10000_t1')
-	save(X_long, 'X_10000_long_t2')
-	# testX = vectorizeText(data_test['tweet'])
-
+	# X = load('X_100000')
+	save(X, 'X_100000')
 	
 	print 'Vectorized'
-	# X_long = np.array(simpleMultiply(X, MULTIPLIER))
-	print X_long.shape
 
 	# Data
-	trainData = X_long[:BREAK_POINT]
-	testData = X_long[BREAK_POINT:]
+	trainData = X[:BREAK_POINT*MULTIPLIER]
+	testData = X[BREAK_POINT*MULTIPLIER:]
 
-
-	# Labels
-	# trainLabels = dict(
-	# 	s=get('s_list')[:BREAK_POINT], 
-	# 	w=get('w_list')[:BREAK_POINT], 
-	# 	k=get('k_list')[:BREAK_POINT]
-	# 	)
-	# testLabels = dict(
-	# 	s=get('s_raw')[BREAK_POINT:], 
-	# 	w=get('w_raw')[BREAK_POINT:], 
-	# 	k=get('k_raw')[BREAK_POINT:]
-	# 	)
+	print trainData.shape
+	print testData.shape
 
 	predictions = {}
+	predictionsTrain = {}
 
 	# Sentiment 1-5
 	print('Sentiment')
-	sClasses = multiply(get('s_raw'), MULTIPLIER)
-	# sClasses = weightToClass(get('s_raw')[:BREAK_POINT])
-	sentimentClf = trainLogReg(trainData, sClasses)
-	save(sentimentClf, 'model_s')
+	sClasses = multiply(get('s_raw')[:BREAK_POINT], MULTIPLIER)
+	sentimentClf = trainLogReg(trainData, sClasses, penalty='l2', C=0.825)
+	# save(sentimentClf, 'model_s')
 	# sentimentClf = load('model_s')
-
-	predictions['s'] = sentimentClf.predict_proba(testData)
+	predictions['s'] = sentimentClf.predict_proba(testData)[::5]
+	predictionsTrain['s'] = sentimentClf.predict_proba(trainData)[::5]
 
 	## When 1-4
 	print('When')
-	wClasses = multiply(get('w_raw'), MULTIPLIER)
-	# wClasses = weightToClass(get('w_raw')[:BREAK_POINT])
-	whenClf = trainLogReg(trainData, wClasses)
-	save(whenClf, 'model_w')
+	wClasses = multiply(get('w_raw')[:BREAK_POINT], MULTIPLIER)
+	whenClf = trainLogReg(trainData, wClasses, penalty='l2', C=0.7)
+	# save(whenClf, 'model_w')
 	# whenClf = load('model_w')
-	predictions['w'] = whenClf.predict_proba(testData)
+	predictions['w'] = whenClf.predict_proba(testData)[::5]
+	predictionsTrain['w'] = whenClf.predict_proba(trainData)[::5]
 
 	## Kind 1-15
 	print('Kind')
 	# Create class list
 	kClassList = []
 	for i in xrange(15):
-		kClassList.append(multiplySingle(get('k_raw')[:,i], MULTIPLIER))
-		# kClassList.append(weightToClassBinary(get('k_raw')[:BREAK_POINT,i]))
+		kClassList.append(multiplySingle(get('k_raw')[:BREAK_POINT,i], MULTIPLIER))
 
 	kindClfs = []
 	predictions['k'] = []
+	predictionsTrain['k'] = []
 	for i in xrange(15):
-		kindClfs.append(trainLogReg(trainData, kClassList[i]))
-		save(kindClfs[i], 'model_k_%d' % i)
-		predictions['k'].append(kindClfs[i].predict_proba(testData)[:,1])
+		kindClfs.append(trainLogReg(trainData, kClassList[i], penalty='l1', C=1))
+		# save(kindClfs[i], 'model_k_%d' % i)
+		# kindClfs.append(load('model_k_%d' % i))
+		predictions['k'].append(kindClfs[i].predict_proba(testData)[::5,1])
+		predictionsTrain['k'].append(kindClfs[i].predict_proba(trainData)[::5,1])
 
 
-	predictions['k'] = np.transpose(np.array(predictions['k']))
+	predictions['k'] = np.array(predictions['k']).T
 	combinedPredictions = np.concatenate((predictions['s'], predictions['w'], predictions['k']), axis=1)
-	writePredictions(combinedPredictions)
 
-	# labels = np.concatenate((testLabels['s'], testLabels['w'], testLabels['k']), axis=1)
 
-	# print('S: Train Error', trainError(predictions['s'], testLabels['s']))
-	# print('W: Train Error', trainError(predictions['w'], testLabels['w']))
-	# print('K: Train Error', trainError(predictions['k'], testLabels['k']))
-	# print('All: Train Error', trainError(combinedPredictions, labels))
+	if SAVE:
+		# Write predictions to file
+		writePredictions(combinedPredictions)
+
+	if TEST_ERROR:
+		# Calculate Test Error
+		testLabels = dict(
+			s=get('s_raw')[BREAK_POINT:], 
+			w=get('w_raw')[BREAK_POINT:], 
+			k=get('k_raw')[BREAK_POINT:]
+		)
+		labels = np.concatenate((testLabels['s'], testLabels['w'], testLabels['k']), axis=1)
+
+		print('S: Test Error', trainError(predictions['s'], testLabels['s']))
+		print('W: Test Error', trainError(predictions['w'], testLabels['w']))
+		print('K: Test Error', trainError(predictions['k'], testLabels['k']))
+		print('All: Test Error', trainError(combinedPredictions, labels))
+
+	if TRAIN_ERROR:
+		trainLabels = dict(
+			s=get('s_raw')[:BREAK_POINT],
+			w=get('w_raw')[:BREAK_POINT],
+			k=get('k_raw')[:BREAK_POINT]
+		)
+
+		predictionsTrain['k'] = np.array(predictionsTrain['k']).T			
+		combinedPredictions = np.concatenate((predictionsTrain['s'], predictionsTrain['w'], predictionsTrain['k']), axis=1)
+
+		labels = np.concatenate((trainLabels['s'], trainLabels['w'], trainLabels['k']), axis=1)
+
+		# Calculate Train Error
+		print('S: Train Error', trainError(predictionsTrain['s'], trainLabels['s']))
+		print('W: Train Error', trainError(predictionsTrain['w'], trainLabels['w']))
+		print('K: Train Error', trainError(predictionsTrain['k'], trainLabels['k']))
+		print('All: Train Error', trainError(combinedPredictions, labels))
+
+	
 
 if __name__ == '__main__':
 	main()

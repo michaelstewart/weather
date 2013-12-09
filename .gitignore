@@ -2,3 +2,5 @@
 *.p
 pickles/
 bak/
+output/
+data/

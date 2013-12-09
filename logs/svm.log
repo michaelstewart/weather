@@ -1,0 +1,48 @@
+2013-12-01 09:05:21,906:INFO:STDOUT:Start
+2013-12-01 09:05:23,224:ERROR:STDERR:Traceback (most recent call last):
+2013-12-01 09:05:23,224:ERROR:STDERR:  File "svm.py", line 82, in <module>
+2013-12-01 09:05:23,224:ERROR:STDERR:main()
+2013-12-01 09:05:23,225:ERROR:STDERR:  File "svm.py", line 46, in main
+2013-12-01 09:05:23,225:ERROR:STDERR:X = load(DATA_NAME)
+2013-12-01 09:05:23,225:ERROR:STDERR:  File "/home/ubuntu/Dropbox/weather/setup.py", line 201, in load
+2013-12-01 09:05:23,225:ERROR:STDERR:return pickle.load(f)
+2013-12-01 09:05:23,225:ERROR:STDERR:  File "/usr/lib/python2.7/pickle.py", line 1378, in load
+2013-12-01 09:05:23,252:ERROR:STDERR:return Unpickler(file).load()
+2013-12-01 09:05:23,253:ERROR:STDERR:  File "/usr/lib/python2.7/pickle.py", line 858, in load
+2013-12-01 09:05:23,253:ERROR:STDERR:dispatch[key](self)
+2013-12-01 09:05:23,253:ERROR:STDERR:  File "/usr/lib/python2.7/pickle.py", line 962, in load_string
+2013-12-01 09:05:23,253:ERROR:STDERR:rep = self.readline()[:-1]
+2013-12-01 09:05:23,253:ERROR:STDERR:KeyboardInterrupt
+2013-12-01 09:05:29,233:INFO:STDOUT:Start
+2013-12-01 09:05:33,999:INFO:STDOUT:(389730, 20000)
+2013-12-01 09:05:33,999:INFO:STDOUT:Vectorized
+2013-12-01 09:05:34,237:ERROR:STDERR:Traceback (most recent call last):
+2013-12-01 09:05:34,237:ERROR:STDERR:  File "svm.py", line 82, in <module>
+2013-12-01 09:05:34,237:ERROR:STDERR:main()
+2013-12-01 09:05:34,237:ERROR:STDERR:  File "svm.py", line 71, in main
+2013-12-01 09:05:34,237:ERROR:STDERR:svc.fit(trainData, classes)
+2013-12-01 09:05:34,237:ERROR:STDERR:  File "/usr/local/lib/python2.7/dist-packages/sklearn/svm/base.py", line 663, in fit
+2013-12-01 09:05:34,265:ERROR:STDERR:y = self._enc.fit_transform(y)
+2013-12-01 09:05:34,265:ERROR:STDERR:  File "/usr/local/lib/python2.7/dist-packages/sklearn/preprocessing/label.py", line 99, in fit_transform
+2013-12-01 09:05:34,275:ERROR:STDERR:y = column_or_1d(y, warn=True)
+2013-12-01 09:05:34,275:ERROR:STDERR:  File "/usr/local/lib/python2.7/dist-packages/sklearn/utils/validation.py", line 265, in column_or_1d
+2013-12-01 09:05:34,275:ERROR:STDERR:raise ValueError("bad input shape {0}".format(shape))
+2013-12-01 09:05:34,275:ERROR:STDERR:ValueError
+2013-12-01 09:05:34,275:ERROR:STDERR::
+2013-12-01 09:05:34,275:ERROR:STDERR:bad input shape (50000, 4)
+2013-12-01 09:22:35,417:INFO:STDOUT:Start
+2013-12-01 09:22:46,112:INFO:STDOUT:(77946, 20000)
+2013-12-01 09:22:46,112:INFO:STDOUT:Vectorized
+2013-12-01 09:23:07,433:INFO:STDOUT:Train time: 21 seconds
+2013-12-01 09:23:07,625:INFO:STDOUT:Saved SVC_w
+2013-12-01 09:23:08,171:INFO:STDOUT:Saved X_w
+2013-12-01 09:23:08,172:INFO:STDOUT:(77946, 1787)
+2013-12-01 09:23:08,172:INFO:STDOUT:End
+2013-12-01 14:24:27,239:INFO:STDOUT:Start
+2013-12-01 14:24:40,542:INFO:STDOUT:(77946, 20000)
+2013-12-01 14:24:40,543:INFO:STDOUT:Vectorized
+2013-12-01 14:25:13,728:INFO:STDOUT:Train time: 33 seconds
+2013-12-01 14:25:13,923:INFO:STDOUT:Saved SVC_w
+2013-12-01 14:25:14,567:INFO:STDOUT:Saved X_w
+2013-12-01 14:25:14,568:INFO:STDOUT:(77946, 1832)
+2013-12-01 14:25:14,568:INFO:STDOUT:End

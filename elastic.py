@@ -15,7 +15,7 @@ def main():
 	initData()
 
 	# X = vectorizeText(get('train')['tweet'], 1000)
-	X = load('X_6000')
+	X = load('X_100000')
 	# testX = vectorizeText(data_test['tweet'])
 
 	print 'Vectorized'
@@ -29,15 +29,16 @@ def main():
 	predictions = []
 	for i in xrange(24):
 		print 'Starting %d...' % i
-		clf.append(ElasticNet(l1_ratio=0.05, max_iter=1000))
+		clf.append(ElasticNet(l1_ratio=0.15, max_iter=1000))
 		clf[i].fit(trainData, trainLabels[:,i])
 		predictions.append(clf[i].predict(testData))
 
+	predictions = removeOutOfBounds(predictions)
 	predictions = np.transpose(predictions)
 	# predictions = removeOutOfBounds(predictions)
 	# writePredictions(predictions)
-	col = '%f,'*23 + '%f'
-	np.savetxt('out_prediction1.csv', predictions, col, delimiter=',')
+	# col = '%f,'*23 + '%f'
+	# np.savetxt('out_prediction1.csv', predictions, col, delimiter=',')
 
 	print('S: Train Error', trainError(predictions[:,0:5], testLabels[:,0:5]))
 	print('W: Train Error', trainError(predictions[:,5:10], testLabels[:,5:10]))

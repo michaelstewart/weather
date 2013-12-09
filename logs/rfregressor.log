@@ -1,0 +1,338 @@
+2013-12-01 09:24:27,843:INFO:STDOUT:Vectorized
+2013-12-01 09:24:29,069:INFO:STDOUT:(50000, 1787)
+2013-12-01 09:24:29,069:INFO:STDOUT:(27946, 1787)
+2013-12-01 09:24:29,069:INFO:STDOUT:When
+2013-12-01 09:24:29,069:INFO:STDOUT:Starting 0...
+2013-12-01 09:24:29,069:INFO:STDOUT:========================================
+2013-12-01 09:24:29,070:INFO:STDOUT:Training: RandomForestRegressor
+2013-12-01 09:27:54,009:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed:  3.4min
+2013-12-01 09:27:54,010:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:  3.4min finished
+2013-12-01 09:27:54,010:INFO:STDOUT:train time: 204.940s
+2013-12-01 09:27:54,304:INFO:STDOUT:Saved w0
+2013-12-01 09:27:54,844:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed:    0.0s
+2013-12-01 09:27:54,844:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s finished
+2013-12-01 09:27:55,462:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed:    0.0s
+2013-12-01 09:27:55,462:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s finished
+2013-12-01 09:27:55,539:INFO:STDOUT:Starting 1...
+2013-12-01 09:27:55,539:INFO:STDOUT:========================================
+2013-12-01 09:27:55,539:INFO:STDOUT:Training: RandomForestRegressor
+2013-12-01 09:38:28,627:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed: 10.5min
+2013-12-01 09:38:28,627:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed: 10.5min finished
+2013-12-01 09:38:28,627:INFO:STDOUT:train time: 633.088s
+2013-12-01 09:38:28,758:INFO:STDOUT:Saved w1
+2013-12-01 09:38:29,310:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed:    0.0s
+2013-12-01 09:38:29,310:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s finished
+2013-12-01 09:38:29,939:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed:    0.0s
+2013-12-01 09:38:29,939:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s finished
+2013-12-01 09:38:30,016:INFO:STDOUT:Starting 2...
+2013-12-01 09:38:30,016:INFO:STDOUT:========================================
+2013-12-01 09:38:30,016:INFO:STDOUT:Training: RandomForestRegressor
+2013-12-01 09:43:48,683:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed:  5.3min
+2013-12-01 09:43:48,683:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:  5.3min finished
+2013-12-01 09:43:48,683:INFO:STDOUT:train time: 318.666s
+2013-12-01 09:43:48,887:INFO:STDOUT:Saved w2
+2013-12-01 09:43:49,430:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed:    0.0s
+2013-12-01 09:43:49,430:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s finished
+2013-12-01 09:43:50,048:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed:    0.0s
+2013-12-01 09:43:50,048:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s finished
+2013-12-01 09:43:50,125:INFO:STDOUT:Starting 3...
+2013-12-01 09:43:50,125:INFO:STDOUT:========================================
+2013-12-01 09:43:50,125:INFO:STDOUT:Training: RandomForestRegressor
+2013-12-01 10:01:17,627:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed: 17.4min
+2013-12-01 10:01:17,627:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed: 17.4min finished
+2013-12-01 10:01:17,627:INFO:STDOUT:train time: 1047.502s
+2013-12-01 10:01:17,711:INFO:STDOUT:Saved w3
+2013-12-01 10:01:18,273:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed:    0.1s
+2013-12-01 10:01:18,274:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.1s finished
+2013-12-01 10:01:18,913:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed:    0.1s
+2013-12-01 10:01:18,913:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.1s finished
+2013-12-01 10:01:20,552:ERROR:STDERR:Traceback (most recent call last):
+2013-12-01 10:01:20,552:ERROR:STDERR:  File "rfregressor.py", line 128, in <module>
+2013-12-01 10:01:20,553:ERROR:STDERR:main()
+2013-12-01 10:01:20,553:ERROR:STDERR:  File "rfregressor.py", line 87, in main
+2013-12-01 10:01:20,553:ERROR:STDERR:print('W: Test Error', trainError(predictions['w'], testLabels['w']))
+2013-12-01 10:01:20,553:ERROR:STDERR:  File "/home/ubuntu/Dropbox/weather/setup.py", line 191, in trainError
+2013-12-01 10:01:20,553:ERROR:STDERR:return np.sqrt(np.sum(errorArray(predict, actual))/ (predict.shape[0]*predict.shape[1]))
+2013-12-01 10:01:20,553:ERROR:STDERR:  File "/home/ubuntu/Dropbox/weather/setup.py", line 188, in errorArray
+2013-12-01 10:01:20,553:ERROR:STDERR:return np.array(np.array(predict-actual)**2)
+2013-12-01 10:01:20,553:ERROR:STDERR:ValueError
+2013-12-01 10:01:20,553:ERROR:STDERR::
+2013-12-01 10:01:20,553:ERROR:STDERR:operands could not be broadcast together with shapes (50000,4) (27946,4)
+2013-12-01 10:39:32,081:INFO:STDOUT:Vectorized
+2013-12-01 10:39:33,315:INFO:STDOUT:(50000, 1787)
+2013-12-01 10:39:33,316:INFO:STDOUT:(27946, 1787)
+2013-12-01 10:39:33,316:INFO:STDOUT:When
+2013-12-01 10:39:33,316:INFO:STDOUT:Starting 0...
+2013-12-01 10:39:33,316:INFO:STDOUT:========================================
+2013-12-01 10:39:33,316:INFO:STDOUT:Training: RandomForestRegressor
+2013-12-01 10:43:05,349:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed:  3.5min
+2013-12-01 10:43:05,350:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:  3.5min finished
+2013-12-01 10:43:05,350:INFO:STDOUT:train time: 212.033s
+2013-12-01 10:43:05,661:INFO:STDOUT:Saved w0
+2013-12-01 10:43:06,228:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed:    0.0s
+2013-12-01 10:43:06,228:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s finished
+2013-12-01 10:43:06,697:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed:    0.0s
+2013-12-01 10:43:06,698:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s finished
+2013-12-01 10:43:06,761:INFO:STDOUT:Starting 1...
+2013-12-01 10:43:06,761:INFO:STDOUT:========================================
+2013-12-01 10:43:06,761:INFO:STDOUT:Training: RandomForestRegressor
+2013-12-01 10:53:51,319:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed: 10.7min
+2013-12-01 10:53:51,319:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed: 10.7min finished
+2013-12-01 10:53:51,319:INFO:STDOUT:train time: 644.558s
+2013-12-01 10:53:51,462:INFO:STDOUT:Saved w1
+2013-12-01 10:53:52,045:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed:    0.1s
+2013-12-01 10:53:52,045:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.1s finished
+2013-12-01 10:53:52,438:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed:    0.0s
+2013-12-01 10:53:52,438:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s finished
+2013-12-01 10:53:52,481:INFO:STDOUT:Starting 2...
+2013-12-01 10:53:52,481:INFO:STDOUT:========================================
+2013-12-01 10:53:52,482:INFO:STDOUT:Training: RandomForestRegressor
+2013-12-01 10:58:52,763:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed:  5.0min
+2013-12-01 10:58:52,763:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:  5.0min finished
+2013-12-01 10:58:52,763:INFO:STDOUT:train time: 300.281s
+2013-12-01 10:58:52,985:INFO:STDOUT:Saved w2
+2013-12-01 10:58:53,551:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed:    0.0s
+2013-12-01 10:58:53,551:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s finished
+2013-12-01 10:58:53,944:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed:    0.0s
+2013-12-01 10:58:53,944:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s finished
+2013-12-01 10:58:53,987:INFO:STDOUT:Starting 3...
+2013-12-01 10:58:53,987:INFO:STDOUT:========================================
+2013-12-01 10:58:53,987:INFO:STDOUT:Training: RandomForestRegressor
+2013-12-01 11:17:24,301:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed: 18.5min
+2013-12-01 11:17:24,301:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed: 18.5min finished
+2013-12-01 11:17:24,301:INFO:STDOUT:train time: 1110.314s
+2013-12-01 11:17:24,402:INFO:STDOUT:Saved w3
+2013-12-01 11:17:24,994:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed:    0.1s
+2013-12-01 11:17:24,994:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.1s finished
+2013-12-01 11:17:25,415:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed:    0.0s
+2013-12-01 11:17:25,416:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s finished
+2013-12-01 11:17:26,807:ERROR:STDERR:Traceback (most recent call last):
+2013-12-01 11:17:26,807:ERROR:STDERR:  File "rfregressor.py", line 128, in <module>
+2013-12-01 11:17:26,807:ERROR:STDERR:main()
+2013-12-01 11:17:26,807:ERROR:STDERR:  File "rfregressor.py", line 87, in main
+2013-12-01 11:17:26,807:ERROR:STDERR:print('W: Test Error', trainError(predictions['w'], testLabels['w']))
+2013-12-01 11:17:26,807:ERROR:STDERR:  File "/home/ubuntu/Dropbox/weather/setup.py", line 191, in trainError
+2013-12-01 11:17:26,807:ERROR:STDERR:return np.sqrt(np.sum(errorArray(predict, actual))/ (predict.shape[0]*predict.shape[1]))
+2013-12-01 11:17:26,807:ERROR:STDERR:  File "/home/ubuntu/Dropbox/weather/setup.py", line 188, in errorArray
+2013-12-01 11:17:26,808:ERROR:STDERR:return np.array(np.array(predict-actual)**2)
+2013-12-01 11:17:26,808:ERROR:STDERR:ValueError
+2013-12-01 11:17:26,808:ERROR:STDERR::
+2013-12-01 11:17:26,808:ERROR:STDERR:operands could not be broadcast together with shapes (50000,4) (27946,4)
+2013-12-01 11:28:26,043:INFO:STDOUT:Vectorized
+2013-12-01 11:28:27,273:INFO:STDOUT:(50000, 1787)
+2013-12-01 11:28:27,273:INFO:STDOUT:(27946, 1787)
+2013-12-01 11:28:27,273:INFO:STDOUT:When
+2013-12-01 11:28:27,273:INFO:STDOUT:Starting 0...
+2013-12-01 11:28:27,274:INFO:STDOUT:========================================
+2013-12-01 11:28:27,274:INFO:STDOUT:Training: RandomForestRegressor
+2013-12-01 11:30:29,862:INFO:STDOUT:Vectorized
+2013-12-01 11:30:31,084:INFO:STDOUT:(50000, 1787)
+2013-12-01 11:30:31,084:INFO:STDOUT:(27946, 1787)
+2013-12-01 11:30:31,084:INFO:STDOUT:When
+2013-12-01 11:30:31,084:INFO:STDOUT:Starting 0...
+2013-12-01 11:30:31,664:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed:    0.0s
+2013-12-01 11:30:31,664:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s finished
+2013-12-01 11:30:32,041:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed:    0.0s
+2013-12-01 11:30:32,041:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s finished
+2013-12-01 11:30:32,084:INFO:STDOUT:Starting 1...
+2013-12-01 11:30:32,655:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed:    0.1s
+2013-12-01 11:30:32,656:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.1s finished
+2013-12-01 11:30:33,041:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed:    0.0s
+2013-12-01 11:30:33,041:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s finished
+2013-12-01 11:30:33,084:INFO:STDOUT:Starting 2...
+2013-12-01 11:30:33,656:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed:    0.0s
+2013-12-01 11:30:33,657:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s finished
+2013-12-01 11:30:34,035:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed:    0.0s
+2013-12-01 11:30:34,035:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s finished
+2013-12-01 11:30:34,078:INFO:STDOUT:Starting 3...
+2013-12-01 11:30:34,659:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed:    0.1s
+2013-12-01 11:30:34,659:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.1s finished
+2013-12-01 11:30:35,052:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed:    0.0s
+2013-12-01 11:30:35,052:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s finished
+2013-12-01 11:30:36,105:ERROR:STDERR:Traceback (most recent call last):
+2013-12-01 11:30:36,106:ERROR:STDERR:  File "rfregressor.py", line 129, in <module>
+2013-12-01 11:30:36,106:ERROR:STDERR:main()
+2013-12-01 11:30:36,106:ERROR:STDERR:  File "rfregressor.py", line 87, in main
+2013-12-01 11:30:36,106:ERROR:STDERR:print('W: Test Error', trainError(predictions['w'], testLabels['w']))
+2013-12-01 11:30:36,106:ERROR:STDERR:  File "/home/ubuntu/Dropbox/weather/setup.py", line 191, in trainError
+2013-12-01 11:30:36,106:ERROR:STDERR:return np.sqrt(np.sum(errorArray(predict, actual))/ (predict.shape[0]*predict.shape[1]))
+2013-12-01 11:30:36,106:ERROR:STDERR:  File "/home/ubuntu/Dropbox/weather/setup.py", line 188, in errorArray
+2013-12-01 11:30:36,106:ERROR:STDERR:return np.array(np.array(predict-actual)**2)
+2013-12-01 11:30:36,109:ERROR:STDERR:ValueError
+2013-12-01 11:30:36,109:ERROR:STDERR::
+2013-12-01 11:30:36,109:ERROR:STDERR:operands could not be broadcast together with shapes (50000,4) (27946,4)
+2013-12-01 11:31:46,066:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed:  3.3min
+2013-12-01 11:31:46,066:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:  3.3min finished
+2013-12-01 11:31:46,066:INFO:STDOUT:train time: 198.792s
+2013-12-01 11:31:46,351:INFO:STDOUT:Saved w0
+2013-12-01 11:31:46,894:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed:    0.0s
+2013-12-01 11:31:46,894:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s finished
+2013-12-01 11:31:47,274:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed:    0.0s
+2013-12-01 11:31:47,274:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s finished
+2013-12-01 11:31:47,318:INFO:STDOUT:Starting 1...
+2013-12-01 11:31:47,318:INFO:STDOUT:========================================
+2013-12-01 11:31:47,318:INFO:STDOUT:Training: RandomForestRegressor
+2013-12-01 11:37:55,443:INFO:STDOUT:Vectorized
+2013-12-01 11:37:56,688:INFO:STDOUT:(50000, 1787)
+2013-12-01 11:37:56,688:INFO:STDOUT:(27946, 1787)
+2013-12-01 11:37:56,688:INFO:STDOUT:When
+2013-12-01 11:37:56,688:INFO:STDOUT:Starting 0...
+2013-12-01 11:37:57,314:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed:    0.0s
+2013-12-01 11:37:57,314:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s finished
+2013-12-01 11:37:57,717:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed:    0.0s
+2013-12-01 11:37:57,717:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s finished
+2013-12-01 11:37:57,765:INFO:STDOUT:Starting 1...
+2013-12-01 11:37:58,367:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed:    0.0s
+2013-12-01 11:37:58,367:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s finished
+2013-12-01 11:37:58,775:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed:    0.0s
+2013-12-01 11:37:58,775:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s finished
+2013-12-01 11:37:58,823:INFO:STDOUT:Starting 2...
+2013-12-01 11:37:59,438:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed:    0.0s
+2013-12-01 11:37:59,438:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s finished
+2013-12-01 11:37:59,841:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed:    0.0s
+2013-12-01 11:37:59,841:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s finished
+2013-12-01 11:37:59,888:INFO:STDOUT:Starting 3...
+2013-12-01 11:38:00,502:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed:    0.1s
+2013-12-01 11:38:00,502:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.1s finished
+2013-12-01 11:38:00,910:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed:    0.0s
+2013-12-01 11:38:00,910:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s finished
+2013-12-01 11:38:02,012:INFO:STDOUT:(50000, 4)
+2013-12-01 11:38:02,012:INFO:STDOUT:(27946, 4)
+2013-12-01 11:38:02,028:ERROR:STDERR:Traceback (most recent call last):
+2013-12-01 11:38:02,028:ERROR:STDERR:  File "rfregressor.py", line 132, in <module>
+2013-12-01 11:38:02,028:ERROR:STDERR:main()
+2013-12-01 11:38:02,028:ERROR:STDERR:  File "rfregressor.py", line 89, in main
+2013-12-01 11:38:02,028:ERROR:STDERR:print('W: Test Error', trainError(predictions['w'], testLabels['w']))
+2013-12-01 11:38:02,028:ERROR:STDERR:  File "/home/ubuntu/Dropbox/weather/setup.py", line 191, in trainError
+2013-12-01 11:38:02,028:ERROR:STDERR:return np.sqrt(np.sum(errorArray(predict, actual))/ (predict.shape[0]*predict.shape[1]))
+2013-12-01 11:38:02,028:ERROR:STDERR:  File "/home/ubuntu/Dropbox/weather/setup.py", line 188, in errorArray
+2013-12-01 11:38:02,028:ERROR:STDERR:return np.array(np.array(predict-actual)**2)
+2013-12-01 11:38:02,028:ERROR:STDERR:ValueError
+2013-12-01 11:38:02,028:ERROR:STDERR::
+2013-12-01 11:38:02,029:ERROR:STDERR:operands could not be broadcast together with shapes (50000,4) (27946,4)
+2013-12-01 11:39:53,563:INFO:STDOUT:Vectorized
+2013-12-01 11:39:54,784:INFO:STDOUT:(50000, 1787)
+2013-12-01 11:39:54,785:INFO:STDOUT:(27946, 1787)
+2013-12-01 11:39:54,785:INFO:STDOUT:When
+2013-12-01 11:39:54,785:INFO:STDOUT:Starting 0...
+2013-12-01 11:39:55,127:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed:    0.0s
+2013-12-01 11:39:55,127:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s finished
+2013-12-01 11:39:55,708:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed:    0.0s
+2013-12-01 11:39:55,708:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s finished
+2013-12-01 11:39:55,786:INFO:STDOUT:Starting 1...
+2013-12-01 11:39:56,115:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed:    0.0s
+2013-12-01 11:39:56,115:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s finished
+2013-12-01 11:39:56,709:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed:    0.0s
+2013-12-01 11:39:56,710:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s finished
+2013-12-01 11:39:56,787:INFO:STDOUT:Starting 2...
+2013-12-01 11:39:57,120:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed:    0.0s
+2013-12-01 11:39:57,120:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s finished
+2013-12-01 11:39:57,704:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed:    0.0s
+2013-12-01 11:39:57,704:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s finished
+2013-12-01 11:39:57,782:INFO:STDOUT:Starting 3...
+2013-12-01 11:39:58,112:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed:    0.0s
+2013-12-01 11:39:58,112:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s finished
+2013-12-01 11:39:58,722:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed:    0.1s
+2013-12-01 11:39:58,722:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.1s finished
+2013-12-01 11:39:59,797:INFO:STDOUT:(27946, 4)
+2013-12-01 11:39:59,797:INFO:STDOUT:(27946, 4)
+2013-12-01 11:39:59,798:INFO:STDOUT:('W: Test Error', nan)
+2013-12-01 11:39:59,799:INFO:STDOUT:('W: Train Error', nan)
+2013-12-01 13:19:57,177:INFO:STDOUT:Vectorized
+2013-12-01 13:19:58,395:INFO:STDOUT:(50000, 1787)
+2013-12-01 13:19:58,396:INFO:STDOUT:(27946, 1787)
+2013-12-01 13:19:58,396:INFO:STDOUT:When
+2013-12-01 13:19:58,396:INFO:STDOUT:Starting 0...
+2013-12-01 13:19:58,396:INFO:STDOUT:========================================
+2013-12-01 13:19:58,396:INFO:STDOUT:Training: RandomForestRegressor
+2013-12-01 13:23:13,627:ERROR:STDERR:Traceback (most recent call last):
+2013-12-01 13:23:13,627:ERROR:STDERR:  File "rfregressor.py", line 132, in <module>
+2013-12-01 13:23:13,627:ERROR:STDERR:main()
+2013-12-01 13:23:13,627:ERROR:STDERR:  File "rfregressor.py", line 60, in main
+2013-12-01 13:23:13,627:ERROR:STDERR:(predictions['w'], predictionsTrain['w']) = learnOverColumns('w', 4)
+2013-12-01 13:23:13,627:ERROR:STDERR:  File "rfregressor.py", line 122, in learnOverColumns
+2013-12-01 13:23:13,628:ERROR:STDERR:clfs.append(trainRFRegressor(trainData, classList[i]))
+2013-12-01 13:23:13,628:ERROR:STDERR:  File "/home/ubuntu/Dropbox/weather/setup.py", line 60, in trainRFRegressor
+2013-12-01 13:23:13,628:ERROR:STDERR:clf.fit(X, y)
+2013-12-01 13:23:13,628:ERROR:STDERR:  File "/usr/local/lib/python2.7/dist-packages/sklearn/ensemble/forest.py", line 302, in fit
+2013-12-01 13:23:13,628:ERROR:STDERR:for i in range(n_jobs))
+2013-12-01 13:23:13,628:ERROR:STDERR:  File "/usr/local/lib/python2.7/dist-packages/sklearn/externals/joblib/parallel.py", line 517, in __call__
+2013-12-01 13:23:13,679:ERROR:STDERR:self.dispatch(function, args, kwargs)
+2013-12-01 13:23:13,679:ERROR:STDERR:  File "/usr/local/lib/python2.7/dist-packages/sklearn/externals/joblib/parallel.py", line 312, in dispatch
+2013-12-01 13:23:13,680:ERROR:STDERR:job = ImmediateApply(func, args, kwargs)
+2013-12-01 13:23:13,680:ERROR:STDERR:  File "/usr/local/lib/python2.7/dist-packages/sklearn/externals/joblib/parallel.py", line 136, in __init__
+2013-12-01 13:23:13,680:ERROR:STDERR:self.results = func(*args, **kwargs)
+2013-12-01 13:23:13,680:ERROR:STDERR:  File "/usr/local/lib/python2.7/dist-packages/sklearn/ensemble/forest.py", line 98, in _parallel_build_trees
+2013-12-01 13:23:13,680:ERROR:STDERR:check_input=False)
+2013-12-01 13:23:13,680:ERROR:STDERR:  File "/usr/local/lib/python2.7/dist-packages/sklearn/tree/tree.py", line 245, in fit
+2013-12-01 13:23:13,699:ERROR:STDERR:self.tree_.build(X, y, sample_weight=sample_weight)
+2013-12-01 13:23:13,699:ERROR:STDERR:KeyboardInterrupt
+2013-12-01 13:32:54,282:INFO:STDOUT:Vectorized
+2013-12-01 13:32:55,501:INFO:STDOUT:(50000, 1787)
+2013-12-01 13:32:55,502:INFO:STDOUT:(27946, 1787)
+2013-12-01 13:32:55,502:INFO:STDOUT:When
+2013-12-01 13:32:55,502:INFO:STDOUT:Starting 0...
+2013-12-01 13:32:55,848:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed:    0.0s
+2013-12-01 13:32:55,848:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s finished
+2013-12-01 13:32:56,447:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed:    0.1s
+2013-12-01 13:32:56,447:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.1s finished
+2013-12-01 13:32:56,526:INFO:STDOUT:Starting 1...
+2013-12-01 13:32:56,873:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed:    0.0s
+2013-12-01 13:32:56,873:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s finished
+2013-12-01 13:32:57,514:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed:    0.1s
+2013-12-01 13:32:57,514:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.1s finished
+2013-12-01 13:32:57,608:INFO:STDOUT:Starting 2...
+2013-12-01 13:32:57,973:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed:    0.0s
+2013-12-01 13:32:57,974:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s finished
+2013-12-01 13:32:58,587:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed:    0.0s
+2013-12-01 13:32:58,587:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s finished
+2013-12-01 13:32:58,678:INFO:STDOUT:Starting 3...
+2013-12-01 13:32:59,029:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed:    0.0s
+2013-12-01 13:32:59,029:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s finished
+2013-12-01 13:32:59,662:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed:    0.1s
+2013-12-01 13:32:59,663:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.1s finished
+2013-12-01 13:33:00,768:INFO:STDOUT:(27946, 4)
+2013-12-01 13:33:00,768:INFO:STDOUT:(27946, 4)
+2013-12-01 13:33:00,769:INFO:STDOUT:('W: Test Error', nan)
+2013-12-01 13:33:00,770:INFO:STDOUT:('W: Train Error', nan)
+2013-12-01 13:33:33,195:INFO:STDOUT:Vectorized
+2013-12-01 13:33:34,436:INFO:STDOUT:(50000, 1787)
+2013-12-01 13:33:34,436:INFO:STDOUT:(27946, 1787)
+2013-12-01 13:33:34,436:INFO:STDOUT:When
+2013-12-01 13:33:34,436:INFO:STDOUT:Starting 0...
+2013-12-01 13:33:34,802:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed:    0.0s
+2013-12-01 13:33:34,802:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s finished
+2013-12-01 13:33:35,416:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed:    0.0s
+2013-12-01 13:33:35,416:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s finished
+2013-12-01 13:33:35,507:INFO:STDOUT:Starting 1...
+2013-12-01 13:33:35,869:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed:    0.0s
+2013-12-01 13:33:35,869:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s finished
+2013-12-01 13:33:36,505:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed:    0.1s
+2013-12-01 13:33:36,505:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.1s finished
+2013-12-01 13:33:36,596:INFO:STDOUT:Starting 2...
+2013-12-01 13:33:36,952:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed:    0.0s
+2013-12-01 13:33:36,952:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s finished
+2013-12-01 13:33:37,579:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed:    0.0s
+2013-12-01 13:33:37,579:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s finished
+2013-12-01 13:33:37,673:INFO:STDOUT:Starting 3...
+2013-12-01 13:33:38,036:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed:    0.0s
+2013-12-01 13:33:38,036:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.0s finished
+2013-12-01 13:33:43,317:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed:    0.1s
+2013-12-01 13:33:43,317:ERROR:STDERR:[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:    0.1s finished
+2013-12-01 13:33:44,446:INFO:STDOUT:(27946, 4)
+2013-12-01 13:33:44,446:INFO:STDOUT:(27946, 4)
+2013-12-01 13:33:44,447:INFO:STDOUT:('W: Test Error', nan)
+2013-12-01 13:33:44,448:INFO:STDOUT:('W: Train Error', nan)
+2013-12-01 13:33:46,850:INFO:STDOUT:Vectorized
+2013-12-01 13:33:47,789:ERROR:STDERR:Traceback (most recent call last):
+2013-12-01 13:33:47,790:ERROR:STDERR:  File "rfregressor.py", line 134, in <module>
+2013-12-01 13:33:47,790:ERROR:STDERR:main()
+2013-12-01 13:33:47,790:ERROR:STDERR:  File "rfregressor.py", line 43, in main
+2013-12-01 13:33:47,790:ERROR:STDERR:trainData = X[:BREAK_POINT].todense()
+2013-12-01 13:33:47,790:ERROR:STDERR:  File "/usr/lib/python2.7/dist-packages/scipy/sparse/base.py", line 458, in todense
+2013-12-01 13:33:47,801:ERROR:STDERR:return np.asmatrix(self.toarray())
+2013-12-01 13:33:47,801:ERROR:STDERR:  File "/usr/lib/python2.7/dist-packages/scipy/sparse/compressed.py", line 550, in toarray
+2013-12-01 13:33:47,803:ERROR:STDERR:return self.tocoo(copy=False).toarray()
+2013-12-01 13:33:47,803:ERROR:STDERR:  File "/usr/lib/python2.7/dist-packages/scipy/sparse/coo.py", line 219, in toarray
+2013-12-01 13:33:47,813:ERROR:STDERR:B = np.zeros(self.shape, dtype=self.dtype)
+2013-12-01 13:33:47,813:ERROR:STDERR:KeyboardInterrupt
