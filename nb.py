@@ -25,7 +25,7 @@ def main():
 
 	# dataList = simpleMultiply(get('tweet'), MULTIPLIER) + simpleMultiply(get('tweet_test'), MULTIPLIER)  # Full Train + Test
 	dataList = simpleMultiply(get('tweet')[:BREAK_POINT], MULTIPLIER) + simpleMultiply(get('tweet')[BREAK_POINT:], MULTIPLIER)  # Up to BP Train + From BP Test
-	X = vectorizeText(dataList, 100000)
+	X = vectorizeTextC(dataList, 100000)
 
 	# X = load('X_100000_first')
 	# save(X, 'X_100000')
@@ -52,7 +52,7 @@ def main():
 	# Sentiment 1-5
 	print('Sentiment')
 	sClasses = multiply(get('s_raw')[:BREAK_POINT], MULTIPLIER)
-	sentimentClf = trainLogReg(trainData, sClasses, penalty='l2', C=0.825)
+	sentimentClf = trainNB(trainData, sClasses)
 	# save(sentimentClf, 'model_s')
 	# sentimentClf = load('model_s')
 	predictions['s'] = sentimentClf.predict_proba(testData)[::5]
@@ -61,7 +61,7 @@ def main():
 	## When 1-4
 	print('When')
 	wClasses = multiply(get('w_raw')[:BREAK_POINT], MULTIPLIER)
-	whenClf = trainLogReg(trainData, wClasses, penalty='l2', C=0.7)
+	whenClf = trainNB(trainData, wClasses)
 	# save(whenClf, 'model_w')
 	# whenClf = load('model_w')
 	predictions['w'] = whenClf.predict_proba(testData)[::5]
@@ -78,7 +78,7 @@ def main():
 	predictions['k'] = []
 	predictionsTrain['k'] = []
 	for i in xrange(15):
-		kindClfs.append(trainLogReg(trainData, kClassList[i], penalty='l1', C=1))
+		kindClfs.append(trainNB(trainData, kClassList[i]))
 		# save(kindClfs[i], 'model_k_%d' % i)
 		# kindClfs.append(load('model_k_%d' % i))
 		predictions['k'].append(kindClfs[i].predict_proba(testData)[::5,1])

@@ -32,8 +32,7 @@ def main():
 	predictions = []
 	for i in xrange(24):
 		print 'Starting %d...' % i
-		clf.append(ElasticNet(l1_ratio=0.15, max_iter=1000))
-		clf[i].fit(trainData, trainLabels[:,i])
+		clf.append(trainRidgeRegressor(trainData, trainLabels[:,i]))
 		predictions.append(clf[i].predict(testData))
 
 	predictions = removeOutOfBounds(predictions)

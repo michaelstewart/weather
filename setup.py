@@ -14,6 +14,8 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.linear_model import SGDClassifier
 from sklearn.linear_model import SGDRegressor
 from sklearn.linear_model import Ridge
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.naive_bayes import MultinomialNB
 
 import logging
 import argparse
@@ -26,6 +28,16 @@ def trainLogReg(X, y, penalty='l2', C=1):
     disp('=' * 40)
     disp("Training: LogisticRegression")
     clf = LogisticRegression(penalty=penalty,C=C)
+    t0 = time()
+    clf.fit(X, y)
+    train_time = time() - t0
+    disp("train time: %0.3fs" % train_time)
+    return clf
+
+def trainNB(X, y):
+    disp('=' * 40)
+    disp("Training: MultinomialNB")
+    clf = MultinomialNB()
     t0 = time()
     clf.fit(X, y)
     train_time = time() - t0
@@ -99,6 +111,12 @@ def vectorizeText(data, size):
 		strip_accents='unicode', analyzer='word')
 	tfidf.fit(data)
 	return tfidf.transform(data)
+
+def vectorizeTextC(data, size):
+	cv = CountVectorizer(max_features=size, min_df=3, ngram_range = (1,2),
+		strip_accents='unicode', analyzer='word', binary=True)
+	cv.fit(data)
+	return cv.transform(data)
 
 def hashingVector(data, size):
 	vectorizer = HashingVectorizer(stop_words='english', non_negative=True, n_features=size)
